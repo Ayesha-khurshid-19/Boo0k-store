@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Merriweather:wght@700&family=Open+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Merriweather:wght@700&family=Open+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+/* ================================= ~ home page ~ ========================================== */
+body {
+    background: url(bookss.png);
+    background-repeat: no-repeat;
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav {
+    position: relative;
+}
+
+header {
+    z-index: 100;
+}
+.book-heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.login {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.login:hover {
+    font-size: 1.4rem;
+    color: #D0780A;
+}
+
+.login-icon {
+    margin-left: -1rem;
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+    color: #D0780A;
+    cursor: pointer;
+    background-color: #EDEADE;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.register {
+    margin-right: -2.4rem;
+    margin-left: -0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.register:hover {
+    font-size: 1.4rem;
+    color: #D0780A;
+}
+
+.register-icon {
+    margin-left: 1.5rem;
+    /* margin-right: -0.2rem; */
+    font-size: 1.3rem;
+    color: #D0780A;
+    cursor: pointer;
+
+    background-color: #EDEADE;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.cart-icon {
+    color: #D0780A;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+
+    background-color: #EDEADE;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#same {
+    padding-top: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    height: 5rem;
+    box-shadow: 0 0 0 #000;
+    color: aliceblue;
+}
+
+#left-nav h2 {
+    padding-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#left-nav {
+    float: left;
+}
+
+#right-nav {
+    float: right;
+    padding-right: 1rem;
+}
+
+#right-nav a {
+    padding-right: 1rem;
+}
+
+#main {
+    gap: 5rem;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: -1.5rem;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    padding: 10px;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+}
+
+.main {
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    /* margin-left: 2rem; */
+    background-color: #172C42;
+}
+
+.cart-heading {
+    text-align: center;
+    margin-top: -0.5rem;
+    color: #D0780A;
+    /* margin-bottom: -0.2rem; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    height: 22rem;
+}
+
+.card:hover {
+    padding: 10px;
+    border: 1px solid black;
+    height: 20.2rem;
+}
+
+.card:hover .price {
+    margin-top: -0.5rem;
+    width: 11.5rem;
+    margin-left: -0.5rem;
+}
+
+.card img {
+    aspect-ratio: 2/3;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.price2 {
+    flex: 1;
+    /* Take remaining space equally */
+    text-align: center;
+}
+
+.price .bx-cart-alt {
+    font-size: 1.1rem;
+    background-color: #D0780A;
+    padding: 7px;
+    border-radius: 50%;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.card .btn {
+    background: #3F758C;
+    margin-left: 0.1rem;
+    padding-right: -2.4rem;
+    margin-top: -0.5rem;
+}
+.card:hover .add-cart  {
+    height: 1.8rem;
+    padding-top: -100rem;
+    padding-bottom: 1rem;
+    margin-top: 0.2rem;    
+}
+.cart {
+    color: white;
+    position: fixed;
+    /* top: 0; */
+    margin-top: 3.9rem;
+    right: -100%;
+    /* right: 0; */
+    width: 360px;
+    height: 32.9rem;
+    padding: 20px;
+    background: #172C42;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-content {
+    width: 35rem;
+    height: 30rem;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 15% 30% 18%;
+}
+
+.cart-box .cart-img {
+    height: 5rem;
+    width: 3.5rem;
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.4rem;
+}
+
+.cart-product-tittle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: bolder;
+}
+
+.cart-quantity {
+    border: 1px solid white;
+    outline-color: #D0780A;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    margin-top: 0.3rem;
+    /* margin-left: 0.8rem; */
+    font-size: 1.2rem;
+    background-color: #D0780A;
+    height: 1.4rem;
+    width: 1.4rem;
+    padding-left: 2px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 50%;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+.total-buy {
+    /* background-color: red; */
+    margin-top: -24.5rem;
+    margin-right: 1rem;
+    height: 3.6rem;
+    width: 23rem;
+}
+
+.total {
+    width: 20.5rem;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid white;
+    margin-top: 1.5rem;
+}
+
+.total-tittle {
+    /* width: 5rem; */
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #D0780A;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background-color: black;
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.last{
+    margin-top: 16.8rem;
+    /* background-color: red; */
+}
